@@ -4,11 +4,11 @@
 
 | Field | Value |
 |-------|-------|
-| Run ID | `0670c989-1137-4a71-aeba-86707e2459c8` |
+| Run ID | `89c8f16b-e21d-49cf-a282-ba461f80f792` |
 | Repository | `BelaSiemens/documate-test-target` |
-| Commit | `8f04beec0109f426d4e29815fd6ec1b0a3f03914` |
+| Commit | `2a1e11ca0280390c592c61d390de06e47ecfd6c4` |
 | Mode | `annotated` |
-| Generated | 2025-12-23T16:47:45.023Z |
+| Generated | 2025-12-23T19:02:25.814Z |
 | Confidence | Annotated |
 
 *Auto-generated documentation from source code analysis.*
@@ -29,13 +29,18 @@
 ## Entities
 
 ### User
-*Source: `User.ts:L4-L19`*
+*Source: `User.ts:L3-L19`*
+*Table: `users`*
 
 | Column | Type | Constraints |
 |--------|------|-------------|
 | id | string | PK, AUTO, NOT NULL |
 | email | string | UNIQUE, NOT NULL |
 | name | string | NULL |
+| createdAt | Date | NOT NULL |
+| updatedAt | Date | NOT NULL |
+
+*Has timestamp columns (createdAt/updatedAt)*
 
 ## API Routes
 
